@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
+const repo = 'vector-dataset-governancer'
+const assetPrefix = `/${repo}/`
+const basePath = `/${repo}`
+
 const nextConfig = {
+  assetPrefix: assetPrefix,
+  basePath: basePath,
   reactStrictMode: true,
   eslint: {
     // Warning: This allows production builds to successfully complete even if
