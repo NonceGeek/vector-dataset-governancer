@@ -40,7 +40,7 @@ export default function Home() {
 
 
   function do_submit_proposal() {
-    const { title, content} = formInput;
+    const { title, content } = formInput;
     return {
       type: 'entry_function_payload',
       function: DAPP_ADDRESS + '::governancer::proposal',
@@ -51,12 +51,12 @@ export default function Home() {
   return (
     <div>
       <center>
-      <p>
-        <b>Module Path: </b>
-        <a target="_blank" href={MODULE_URL} className="underline">
-          {DAPP_ADDRESS}::governancer
-        </a>
-      </p>
+        <p>
+          <b>Module Path: </b>
+          <a target="_blank" href={MODULE_URL} className="underline">
+            {DAPP_ADDRESS}::governancer
+          </a>
+        </p>
 
         <input
           placeholder="Proposal Title"
