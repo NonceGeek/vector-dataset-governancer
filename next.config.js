@@ -26,6 +26,7 @@ const nextConfig = {
       "www.gitbook.com",
       "raw.githubusercontent.com",
     ],
+    unoptimized: true,
   },
   webpack5: true,
   webpack: (config) => {
