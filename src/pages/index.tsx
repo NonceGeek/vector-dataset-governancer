@@ -50,36 +50,34 @@ export default function Home() {
   }
   return (
     <div>
-      <center>
-        <p>
-          <b>Module Path: </b>
-          <a target="_blank" href={MODULE_URL} className="underline">
-            {DAPP_ADDRESS}::governancer
-          </a>
-        </p>
+      <p>
+        <b>Module Path: </b>
+        <a target="_blank" href={MODULE_URL} className="underline">
+          {DAPP_ADDRESS}::governancer
+        </a>
+      </p>
 
-        <input
-          placeholder="Proposal Title"
-          className="mt-8 p-4 input input-bordered input-primary w-1/2"
-          onChange={(e) => updateFormInput({ ...formInput, title: e.target.value })}
-        />
-        <br></br>
-        <input
-          placeholder="Proposal Content"
-          className="mt-8 p-4 input input-bordered input-primary w-1/2"
-          onChange={(e) => updateFormInput({ ...formInput, content: e.target.value })}
-        />
-        <br></br>
-        <input
-          placeholder="Proposal Dataset-ID"
-          className="mt-8 p-4 input input-bordered input-primary w-1/2"
-          onChange={(e) => updateFormInput({ ...formInput, dataset_id: e.target.value })}
-        />
-        <br></br>
-        <button className={'btn btn-primary font-bold mt-4  text-white rounded p-4 shadow-lg'}>
-          Submit Proposal
-        </button>
-      </center>
+      <input
+        placeholder="Proposal Title"
+        className="mt-8 p-4 input input-bordered input-primary w-1/2"
+        onChange={(e) => updateFormInput({ ...formInput, title: e.target.value })}
+      />
+      <br />
+      <input
+        placeholder="Proposal Content"
+        className="mt-8 p-4 input input-bordered input-primary w-1/2"
+        onChange={(e) => updateFormInput({ ...formInput, content: e.target.value })}
+      />
+      <br />
+      <input
+        placeholder="Proposal Dataset-ID"
+        className="mt-8 p-4 input input-bordered input-primary w-1/2"
+        onChange={(e) => updateFormInput({ ...formInput, dataset_id: e.target.value })}
+      />
+      <br />
+      <button className={'btn btn-primary font-bold mt-4  text-white rounded p-4 shadow-lg'}>
+        Submit Proposal
+      </button>
     </div>
   );
 }
