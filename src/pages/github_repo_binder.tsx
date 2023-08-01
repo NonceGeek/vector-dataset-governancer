@@ -55,7 +55,7 @@ export default function Home() {
   }
 
   function do_update_service() {
-    const { name, description, github_path,  expired_at } = formInput;
+    const { name, description, github_path, expired_at } = formInput;
     return {
       type: 'entry_function_payload',
       function: DAPP_ADDRESS + '::service_aggregator::update_service',
@@ -300,71 +300,71 @@ export default function Home() {
                 <div>{render_services_table()}</div>
               </>
             )}
-          <br></br>
+            <br></br>
           </div>
 
 
 
-        <input
-          placeholder="service Name"
-          className="mt-8 p-4 input input-bordered input-primary w-1/4"
-          onChange={(e) => updateFormInput({ ...formInput, name: e.target.value })}
-          value={formInput.name}
-        />
-        <br></br>
-        <input
-          placeholder="service Description"
-          className="mt-8 p-4 input input-bordered input-primary w-1/4"
-          onChange={(e) => updateFormInput({ ...formInput, description: e.target.value })}
-          value={formInput.description}
-        />
-        <br></br>
-        <br></br>
-        <br></br>
-
-        <div className="inline-flex relative mr-3 formkit-field">
-          <p>GitHub Repo path ( Begin with https:// ) :</p>
           <input
-            placeholder="https://github.com/NonceGeek/MoveDID"
-            className="p-4 input input-bordered input-primary ml-2"
-            onChange={(e) => updateFormInput({ ...formInput, github_path: e.target.value })}
-            value={formInput.github_path}
+            placeholder="service Name"
+            className="mt-8 p-4 input input-bordered input-primary w-1/4"
+            onChange={(e) => updateFormInput({ ...formInput, name: e.target.value })}
+            value={formInput.name}
           />
-        </div>
-        <br></br>
-        <br></br>
-        <div className="inline-flex relative mr-3 formkit-field">
-          <p>0 means never expire: </p>
-        <input
-          className="p-4 input input-bordered input-primary ml-2"
-          onChange={(e) => updateFormInput({ ...formInput, expired_at: parseInt(e.target.value) })}
-          placeholder="0"
-          value={formInput.expired_at}
-        />
-        </div>
+          <br></br>
+          <input
+            placeholder="service Description"
+            className="mt-8 p-4 input input-bordered input-primary w-1/4"
+            onChange={(e) => updateFormInput({ ...formInput, description: e.target.value })}
+            value={formInput.description}
+          />
+          <br></br>
+          <br></br>
+          <br></br>
 
-        <br></br>
-        <button onClick={add_service} className={'btn btn-primary font-bold mt-4  text-white rounded p-4 shadow-lg'}>
-          Add Service
-        </button>
-        <br></br>
-        <button onClick={update_service} className={'btn btn-primary font-bold mt-4  text-white rounded p-4 shadow-lg'}>
-          Update Service
-        </button>
-        <br></br>
-        <input
-          placeholder="service Name"
-          className="mt-8 p-4 input input-bordered input-primary w-1/4"
-          onChange={(e) => updateFormInput({ ...formInput, name: e.target.value })}
-          value={formInput.name}
-        />
-        <br></br>
-        <button onClick={delete_service} className={'btn btn-primary font-bold mt-4  text-white rounded p-4 shadow-lg'}>
-          Delete Service
-        </button>
+          <div className="inline-flex relative mr-3 formkit-field">
+            <p>GitHub Repo path ( Begin with https:// ) :</p>
+            <input
+              placeholder="https://github.com/NonceGeek/MoveDID"
+              className="p-4 input input-bordered input-primary ml-2"
+              onChange={(e) => updateFormInput({ ...formInput, github_path: e.target.value })}
+              value={formInput.github_path}
+            />
+          </div>
+          <br></br>
+          <br></br>
+          <div className="inline-flex relative mr-3 formkit-field">
+            <p>0 means never expire: </p>
+            <input
+              className="p-4 input input-bordered input-primary ml-2"
+              onChange={(e) => updateFormInput({ ...formInput, expired_at: parseInt(e.target.value) })}
+              placeholder="0"
+              value={formInput.expired_at}
+            />
+          </div>
+
+          <br></br>
+          <button onClick={add_service} className={'btn btn-primary font-bold mt-4  text-white rounded p-4 shadow-lg'}>
+            Add Service
+          </button>
+          <br></br>
+          <button onClick={update_service} className={'btn btn-primary font-bold mt-4  text-white rounded p-4 shadow-lg'}>
+            Update Service
+          </button>
+          <br></br>
+          <input
+            placeholder="service Name"
+            className="mt-8 p-4 input input-bordered input-primary w-1/4"
+            onChange={(e) => updateFormInput({ ...formInput, name: e.target.value })}
+            value={formInput.name}
+          />
+          <br></br>
+          <button onClick={delete_service} className={'btn btn-primary font-bold mt-4  text-white rounded p-4 shadow-lg'}>
+            Delete Service
+          </button>
         </>
       )}
-      </>
-    </div>
+    </>
+    </div >
   );
 }
