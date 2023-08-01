@@ -241,7 +241,6 @@ export default function Home() {
   };
   return (
     <div>
-      <center>
       <p>
         <b>Module Path: </b>
         <a target="_blank" href={MODULE_URL} className="underline">
@@ -365,7 +364,7 @@ export default function Home() {
         </button>
         </>
       )}
-      </center>
+      </>
     </div>
   );
 }
