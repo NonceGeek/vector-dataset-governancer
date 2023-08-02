@@ -5,7 +5,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 7218:
+/***/ 3787:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -174,7 +174,10 @@ function AptosConnect() {
 
 // EXTERNAL MODULE: ./src/config/constants.ts
 var constants = __webpack_require__(8002);
+;// CONCATENATED MODULE: ./src/assets/img/logo.png
+/* harmony default export */ const logo = ({"src":"/vector-dataset-governancer/_next/static/media/logo.98c2b307.png","height":539,"width":539,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA90lEQVR42mOAgEhNBoa8gwwMpb8YGCqAuOggA4OnJlQyTTM7dcbbkyeu/r9+7f7/3s7V/+fN2f6/q23VWwYGQ5CiioMdzSv+b1h3+Gdf15r/N64/+H/r5qOf2Skz/qsw1B1kcDBs/aUr3PC/oXrx/8aaJSCd/xtrl/z3tO34b6nR/IvBRrfll6NJ2/+2puX/O1tX/p8zcyvQmjX/Az16/psqNf1iMFVsOhgE5Jw+ee3n5Ut3/zfXLQUp+lldtvC/AEP1QQYGBgPNzpaVb7dvPfF/PtBxt28//n/t6v3/NeUL3zIw+MF8kgz1ZvEvHYGGX0JgnU5gSQCtH4BY5QZLkwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./src/components/NavBar.tsx
+
 
 
 
@@ -182,7 +185,7 @@ var constants = __webpack_require__(8002);
 
 function NavBar() {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("nav", {
-        className: "navbar py-4 px-4 bg-base-100",
+        className: "px-4 py-4 navbar bg-base-100",
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: "flex-1",
@@ -190,31 +193,34 @@ function NavBar() {
                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         href: "http://movedid.build",
                         target: "_blank",
+                        rel: "noreferrer",
                         children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                            src: "/logo.png",
+                            src: logo,
                             width: 64,
                             height: 64,
                             alt: "logo"
                         })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                        className: "menu menu-horizontal p-0 ml-5",
+                        className: "p-0 ml-5 menu menu-horizontal",
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx(NavItem, {
                                 href: "/",
                                 title: "Proposal Submitter"
                             }),
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
-                                className: "font-sans font-semibold text-lg",
+                                className: "font-sans text-lg font-semibold",
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                         href: "https://github.com/NonceGeek/MoveDID/tree/main/did-aptos",
                                         target: "_blank",
+                                        rel: "noreferrer",
                                         children: "Source Code"
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                         href: constants/* MODULE_URL */.kA,
                                         target: "_blank",
+                                        rel: "noreferrer",
                                         children: "Contract on Explorer"
                                     })
                                 ]
@@ -495,7 +501,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [676,61,2], () => (__webpack_exec__(7218)));
+var __webpack_exports__ = __webpack_require__.X(0, [676,61,2], () => (__webpack_exec__(3787)));
 module.exports = __webpack_exports__;
 
 })();
