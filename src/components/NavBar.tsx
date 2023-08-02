@@ -1,18 +1,18 @@
 import Image from "next/image";
 import { NavItem } from "./NavItem";
 import { AptosConnect } from "./AptosConnect";
-import {
-  MODULE_URL
-} from "../config/constants";
+import { MODULE_URL } from "../config/constants";
+
+import LogoUrl from "@assets/img/logo.png";
 
 export function NavBar() {
   return (
-    <nav className="navbar py-4 px-4 bg-base-100">
+    <nav className="px-4 py-4 navbar bg-base-100">
       <div className="flex-1">
-        <a href="http://movedid.build" target="_blank">
-          <Image src="/logo.png" width={64} height={64} alt="logo" />
+        <a href="http://movedid.build" target="_blank" rel="noreferrer">
+          <Image src={LogoUrl} width={64} height={64} alt="logo" />
         </a>
-        <ul className="menu menu-horizontal p-0 ml-5">
+        <ul className="p-0 ml-5 menu menu-horizontal">
           <NavItem href="/" title="Proposal Submitter" />
           {/* 
           <NavItem href="/github_repo_binder" title="GithubRepoBinder" />
@@ -22,9 +22,17 @@ export function NavBar() {
           <NavItem href="/addr_events" title="AddrEvents" />
           <NavItem href="/create_did_events" title="CreateDIDEvents" />
           <NavItem href="/did_querier" title="DIDQuerier" /> */}
-          <li className="font-sans font-semibold text-lg">
-            <a href="https://github.com/NonceGeek/MoveDID/tree/main/did-aptos" target="_blank">Source Code</a>
-            <a href={MODULE_URL} target="_blank">Contract on Explorer</a>
+          <li className="font-sans text-lg font-semibold">
+            <a
+              href="https://github.com/NonceGeek/MoveDID/tree/main/did-aptos"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Source Code
+            </a>
+            <a href={MODULE_URL} target="_blank" rel="noreferrer">
+              Contract on Explorer
+            </a>
           </li>
         </ul>
       </div>
