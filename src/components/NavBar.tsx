@@ -14,6 +14,7 @@ export function NavBar() {
         </a>
         <ul className="p-0 ml-5 menu menu-horizontal">
           <NavItem href="/" title="Proposal Submitter" />
+          <NavItem href="https://ai.movedid.build/proposal_viewer" title="Proposal List" />
           {/* 
           <NavItem href="/github_repo_binder" title="GithubRepoBinder" />
           <NavItem href="/service_manager" title="ServiceManager" />

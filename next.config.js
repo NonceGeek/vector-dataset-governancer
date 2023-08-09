@@ -2,7 +2,7 @@
 
 const nextConfig = {
   output: "export",
-  basePath: "/gh-pages",
+  basePath: "/vector-dataset-governancer",
   reactStrictMode: true,
   eslint: {
     // Warning: This allows production builds to successfully complete even if
